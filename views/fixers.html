@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="en" />
+		
+		<title>Internet of Broken Things</title>
+
+		<link href="css/main.min.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" style="margin-top: 100px;">
+				<div class="col-md-12" style="text-align: center;">
+					<h1>Internet of broken things</h1>
+				</div>
+			</div>
+			<div id="action-buttons" class="row" style="
+														margin-top: 150px;
+														">
+				<div class="col-md-offset-1 col-md-3">
+					<button type="button" class="btn btn-default" style="
+																										   width: 100%;
+																										   font-size: 26px;
+																										   ">Learn</button>
+				</div>
+				<div id="fix-button" class="col-md-3">
+					<button type="button" class="btn btn-default" style="
+																		 width: 100%;
+																		 font-size: 26px;
+																		 ">Fix</button>
+				</div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-default" style="
+																		 width: 100%;
+																		 font-size: 26px;
+																		 ">Give away</button>
+				</div>
+			</div>
+
+			<div id="progress-bar" class="row" style="margin-top: 150px; display: none;">
+				<div class="col-md-offset-12" style="text-align: center">
+					<h2>Waiting for requests...</h2>
+				</div>
+			</div>			
+
+			<div id="helpseekers-list" class="row" style="margin-top: 150px;">
+				
+				<div class="col-md-12" style="
+											  /* margin-top: 50px; */
+											  ">
+					<!-- <h2 style=" -->
+					<!-- 		   margin-bottom: 30px; -->
+					<!-- 		   ">People in need of repair help in your neighborhood</h2> -->
+					<ul class="list-group">
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/lib/jquery-1.10.2.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/fixers.js"></script>
+		<script src="js/lib/underscore-min.js"></script>
+		<script src="js/lib/async.js"></script>		
+
+	</body>
+</html>

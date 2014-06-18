@@ -1,6 +1,6 @@
 var fixerAnsweredYes;
 
-(function() {
+$(function() {
     var progressBar;
     var firstFixerChecked = false;
     $('#fix-button').click(function() {

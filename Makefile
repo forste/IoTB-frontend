@@ -6,9 +6,10 @@ build :
 	mkdir -p public/js
 	lessc -x less/main.less > public/css/main.min.css
 	cp -r img public
-	uglifyjs js/main.js > public/js/main.min.js
+	cp js/main.js public/js/main.js
+	cp js/fixers.js public/js/fixers.js
 	cp -r js/lib public/js
-	cp -r views/index.html public/index.html
+	cp -r views/*.html public/
 	cp -r bootstrap-3.0.0/fonts public/
 
 upload:

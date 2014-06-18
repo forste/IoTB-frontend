@@ -31,6 +31,10 @@ app.get('/index.html', function(req, res) {
     return res.render('index.html', {});
 });
 
+app.get('/fixers.html', function(req, res) {
+    return res.render('fixers.html', {});
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
