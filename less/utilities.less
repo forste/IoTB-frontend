@@ -1,0 +1,33 @@
+.make-section(@image-url, @h1-color) {
+    .make-background(@image-url);
+
+    .static-stephan {
+		.static-stephan-for-description-default;
+    }
+    .description-background {
+		.description-background-default;
+    }
+    .description {
+        .description-default;
+    }
+
+    .video {
+        .video-default;
+    }            
+}
+
+.make-background(@image-url) {
+    background-image: @image-url;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    .background-size(cover);
+    
+}
+
+.background-size(@size) {
+    -webkit-background-size: @size;
+    -moz-background-size: @size;
+    -o-background-size: @size;
+    background-size: @size;
+}

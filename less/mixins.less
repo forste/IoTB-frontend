@@ -1,0 +1,67 @@
+.static-stephan-for-description-default {
+    width: 100px;
+	float: right;
+	padding-top: 25px;
+	padding-right: 25px;
+    padding-left: 10px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.description-background-default {
+	position: relative;
+    margin-top: 250px;
+    @media screen and (max-height: 600px), (max-height: 800px) and (max-width: 1024px) {
+        margin-top: 75px;
+    }                           
+	// left: -300px; /* TODO adapt to container padding-left + margin-left */
+	// width: 2000px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.description-default {
+    .description-invisible {
+        opacity: 100;
+        @media (min-width: @screen-tablet) and (min-height: @screen-tablet-height){
+            opacity: 100;
+        }
+    }
+}
+
+.video-default {
+    @media (min-width: @screen-tablet) and (min-height: @screen-tablet-height){
+	    position: absolute;
+        top: 150px;
+        left: -3000px;
+        z-index: 3;
+        transition: left 2s ease-in;
+        &.visible {
+            transition: left 2s ease-out;
+        }
+    }
+    
+    iframe {
+        border-color: #000;
+        border: 5px solid;
+        border-radius: 15px;
+        width: 100%;
+        
+        @media (min-width: @screen-tablet) and (min-height: @screen-tablet-height){
+            width: 750px;
+            height: 425px;
+        }
+        @media (min-width: @screen-desktop) and (min-height: @screen-desktop-height){
+            width: 1100px;
+            height: 620px;            
+        }
+        @media (min-width: @screen-lg-desktop) and (min-height: @screen-lg-desktop-height){
+            width: 1280px;
+	        height: 720px;            
+        }                
+    }
+
+    @media screen and (max-height: 900px), (max-width: 1600) {
+        top: 75px;
+    }                           
+}
+
